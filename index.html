@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-light bg-dark d-flex justify-content-center" id="navBar">
+        <span class="navbar-text text-light h1">
+          Weather Dashboard
+        </span>
+    </nav>
+<div id="searchForm">
+    <form class="needs-validation mt-3" novalidate></form>
+        <div class="col-md-3 mb-3 d-flex flex-column justify-content-center">
+            <label for="citySearch">Search for a City:</label>
+            <input type="text" class="form-control" id="citySearch" required>
+            <div class="invalid-feedback">
+            Please provide a valid city.
+            </div>
+            <button class="btn btn-danger mt-3" type="button" id="searchBtn">Search</button>
+        </div>
+        
+    </form>
+</div>
+    <ul class="col-md-3" id="cityList"></ul>
+    <div id="weatherInfo"></div>
+
 </body>
 </html>
