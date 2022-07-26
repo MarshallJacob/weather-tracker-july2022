@@ -17,21 +17,31 @@
           Weather Dashboard
         </span>
     </nav>
-<div id="searchForm">
-    <form class="needs-validation mt-3" novalidate></form>
+    <!-- Form element begins -->
+    <form class="needs-validation mt-3" id="searchForm" novalidate>
         <div class="col-md-3 mb-3 d-flex flex-column justify-content-center">
+            <!-- form title -->
             <label for="citySearch">Search for a City:</label>
+            <!-- form input field -->
             <input type="text" class="form-control" id="citySearch" required>
+            <!-- message for when field is left blank -->
             <div class="invalid-feedback">
             Please provide a valid city.
             </div>
-            <button class="btn btn-danger mt-3" type="button" id="searchBtn">Search</button>
+            <!-- button for form submission -->
+            <button class="btn btn-danger mt-3" type="submit" id="searchBtn">Search</button>
         </div>
-        
+        <!-- area where the generated information about the weather will go -->
+        <div class="col-lg-6 d-flex float-right flex-column" id="weatherInfo">
+            Here goes the weather
+        </div>  
     </form>
-</div>
+    <!-- section for the city history to go -->
+    <div class="col-md-3 mb-3 d-flex flex-column" id="cityHistory">Here goes the city history
+        <button class="btn cityBtn btn-secondary mt-3" type="click">City name</button>
+    </div>
     <ul class="col-md-3" id="cityList"></ul>
-    <div id="weatherInfo"></div>
 
+    <script src="./assets/script.js"></script>
 </body>
 </html>

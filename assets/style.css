@@ -6,6 +6,6 @@
     padding-top: 30px;
 }
 
-#searchBtn:hover {
+.cityBtn:hover, #searchBtn:hover {
 box-shadow: 5px 3px 3px rgb(51, 50, 50);
 }
